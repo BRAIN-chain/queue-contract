@@ -48,3 +48,8 @@ Deploy PriorityQueue:    0x05C9B438D1F411B6D8D8021E2d38B8354f2Be099
 
   4 passing (2m)
 ```
+
+# References
+
+- https://github.com/omgnetwork/plasma-mvp/blob/master/plasma/root_chain/contracts/PriorityQueue.sol
+- https://github.com/zmitton/eth-heap
