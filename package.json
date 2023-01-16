@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/BRAIN-chain/queue-contract#readme",
   "dependencies": {
+    "discrete-sampling": "^1.0.3",
+    "ganache-cli": "^6.12.2",
     "hardhat": "^2.12.6"
   },
   "devDependencies": {

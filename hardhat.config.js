@@ -26,6 +26,10 @@ module.exports = {
     enabled: true
   },
 
+  mocha: {
+    timeout: 100000000
+  },
+
   networks: {
     hardhat: {
       forking: {
