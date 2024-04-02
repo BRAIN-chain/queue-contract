@@ -16,7 +16,7 @@ contract CircularQueue {
         return SIZE;
     }
 
-    function push(bytes32 hashedValue) external {
+    function push(bytes32 hashedValue) public virtual {
         if ((back + 1) % SIZE == front) return;
         data[back] = hashedValue;
         back = (back + 1) % SIZE;
@@ -29,7 +29,7 @@ contract CircularQueue {
         return data[front];
     }
 
-    function pop() external returns (bytes32) {
+    function pop() public virtual returns (bytes32) {
         require(back != front, "CircularQueue::pop: No elements.");
         bytes32 r = data[front];
         delete data[front];

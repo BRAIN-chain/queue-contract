@@ -30,7 +30,7 @@ contract PriorityQueue {
         // currentSize = 0;
     }
 
-    function push(uint256 priority, bytes32 hashedValue) external {
+    function push(uint256 priority, bytes32 hashedValue) public virtual {
         require(
             priority < MAX_PRIORITY_MINUS_ONE,
             "PriorityQueue::push: Invalid priority."
@@ -50,7 +50,7 @@ contract PriorityQueue {
         return (prioirity, data[position]);
     }
 
-    function pop() external returns (uint256, bytes32) {
+    function pop() public virtual returns (uint256, bytes32) {
         uint256 retVal = heapList[1];
         heapList[1] = heapList[currentSize];
         delete heapList[currentSize];

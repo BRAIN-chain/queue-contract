@@ -1,3 +1,37 @@
+# TL;DR
+
+```bash
+$ npx hardhat test benchmark/gas.js --network hardhat
+
+    Queue
+Min: 29552
+Max: 46652
+Average (std): 29572.87912087912087912 (597.157457748190641764 = sqrt(356597.029344282091534838))
+Median: 29552
+      ✔ Push (11683ms)
+
+Min: 12568
+Max: 29668
+Average (std): 12588.87912087912087912 (597.157457748190641764 = sqrt(356597.029344282091534838))
+Median: 12568
+      ✔ Pop (5152ms)
+
+    PriorityQueue
+Min: 62495
+Max: 116085
+Average (std): 69212.120879120879120879 (8618.406023852766054415 = sqrt(74276922.391981644728897475))
+Median: 68709
+      ✔ Push (6113ms)
+
+Min: 22391
+Max: 105293
+Average (std): 89461.174603174603174603 (12948.716432729076376311 = sqrt(167669257.255228017132779036))
+Median: 92892
+      ✔ Pop (9137ms)
+```
+
+---
+
 # Queue
 
 PriorityQueue and CircularQueue.

@@ -22,9 +22,9 @@ module.exports = {
   //   currency: 'USD',
   //   gasPrice: <PRICE>
   // }
-  gasReporter: {
-    enabled: true
-  },
+  // gasReporter: {
+  //   enabled: true
+  // },
 
   mocha: {
     timeout: 100000000
