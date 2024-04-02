@@ -9,7 +9,7 @@ module.exports = {
     settings: {
       optimizer: {
         enabled: true,
-        runs: 200,
+        runs: 2 ** 32 - 1
       },
     },
   },
@@ -34,7 +34,7 @@ module.exports = {
     hardhat: {
       forking: {
         enabled: true,
-        url: 'https://rpc.ankr.com/polygon_mumbai',
+        url: 'https://rpc.ankr.com/eth',
       },
     },
     localhost: {
@@ -42,6 +42,12 @@ module.exports = {
     },
     mumbai: {
       url: 'https://rpc.ankr.com/polygon_mumbai',
+    },
+    polygon: {
+      url: 'https://rpc.ankr.com/polygon',
+    },
+    ethereum: {
+      url: 'https://rpc.ankr.com/eth',
     },
   },
 };
